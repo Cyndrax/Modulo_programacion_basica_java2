@@ -1,0 +1,33 @@
+Inicio
+
+Char tipo
+int k
+int total
+int precio
+Escribir "Selecciona un tipo autobús: A – B – C"
+leer tipo
+Escribir "Ingresa los kilómetros a recorrer"
+leer k
+Escribir "Ingresa el número de personas"
+leer n
+si (tipo == "A" o tipo == "B" o tipo == "C") Entonces
+si (tipo == "A") Entonces
+precio = k * 200
+SiNo
+si (tipo == "B") Entonces
+precio = k * 250
+SiNo
+precio = k * 300
+FinSi
+FinSi
+SiNo
+Escribir "Ingresa un tipo de Autobús correcto”
+FinSi
+si (n < 20) Entonces
+total = 20 * precio
+SiNo
+total = n * precio
+FinSi
+Escribir "El total a pagar por el viaje $",total
+Escribir "El total a pagar por persona es: $",total / n
+FinAlgoritmo

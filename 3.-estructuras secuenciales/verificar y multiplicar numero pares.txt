@@ -1,0 +1,44 @@
+Int num
+Int par
+Int suma
+String op
+
+
+Suma=0
+Escribir “ingresar un numero par”
+Leer num
+par=num%2
+Si (par==0)
+Suma=suma+num
+Si no
+Escribir “el numero ingresado no es par, Ingrese un numero par”
+Fin si
+Escribir “Desea ingresar otro número s/n”
+Leer op
+mientras (op==s)
+escribir “la multiplicación de los números pares ingresados es”,suma
+
+
+
+
+Int cantidad
+int numero = 0
+int acumulador = 0
+
+Proceso:
+Escribir ("Cuantos numeros desea calcular?")
+Leer cantidad
+
+Para (i = 1; i <= cantidad; i++)
+Escribir ("Ingrese " . i . "Numero")
+Leer (numero)
+calculo = numero % 2
+Si (calculo == 0){
+acumulador = acumulador + numero
+}
+Sino{
+Escribir ("Numero " . numero . "no es par")
+}
+Fin Si
+}fin para
+Escribir ("La suma de numeros pares ingresados es ". acumulador)

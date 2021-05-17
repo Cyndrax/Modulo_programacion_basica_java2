@@ -1,0 +1,22 @@
+Inicio
+
+int total 
+Int n 
+Escribir "Ingresa el número de alumnos"
+Leer n
+Si (n >= 100) Entonces
+total = n * 6500
+SiNo
+Si (n >= 50) Entonces
+total = n * 7000
+SiNo
+Si (n >= 30) Entonces
+total = n * 9500
+SiNo
+total = 400000
+FinSi
+FinSi
+FinSi
+Escribir "El total a pagar por alumno es: $", total / n
+Escribir "El total a pagar por la renta del autobús es: $",total
+FinAlgoritmo 

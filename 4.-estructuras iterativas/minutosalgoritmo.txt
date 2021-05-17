@@ -1,0 +1,59 @@
+Inicio
+
+int minutos
+int turno
+int dia
+int error
+int precio
+int impuesto
+int total
+impuesto = 0
+error = 0
+Escribir "Ingresa los minutos"
+leer minutos
+si minutos( <= 5 )Entonces
+precio = minutos * .10
+SiNo
+si minutos( <= 8 )Entonces
+precio = ((minutos – 5) *.8) + 5
+SiNo
+si minutos (<= 10 )Entonces
+precio = ((minutos – 8) * .7) + 7.4
+SiNo
+precio = ((minutos – 10) * .5) + 8.8
+FinSi
+FinSi
+FinSi
+Escribir "Ingresa un número de acuerdo al día"
+Escribir "1 = Domingo"
+Escribir "2 = Otro dia"
+leer dia
+si (dia == 1) Entonces
+impuesto = precio * .03
+SiNo
+si (dia == 2 )Entonces
+Escribir "Ingresa un número de acuerdo al turno"
+Escribir "1 = Matutino"
+Escribir "2 = Vespertino"
+leer turno
+si (turno == 1) Entonces
+impuesto = precio * .15
+SiNo
+si (turno == 2 )Entonces
+impuesto = precio * .10
+SiNo
+Escribir "Ingresa un turno correcto"
+error = 1
+FinSi
+FinSi
+SiNo
+Escribir "Ingresa un día correcto"
+error = 1
+FinSi
+FinSi
+Si (error == 0) Entonces
+total = precio + impuesto
+Escribir "El total a pagar por ",minutos," minutos de llamada es: $",total
+Escribir "EL impuesto aplicado es: $",impuesto
+FinSi
+FinAlgoritmo 

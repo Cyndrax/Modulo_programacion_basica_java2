@@ -1,0 +1,25 @@
+int n 
+int pago
+int total 
+Escribir "Ingresa el número de citas"
+Leer n  
+si (n <= 3) Entonces
+pago = 200
+total = n * pago
+SiNo
+si (n <= 5) Entonces
+pago = 150
+total = ((n-3) * pago) + 600
+SiNo
+si (n <= 8) Entonces
+pago = 100
+total = ((n-5) * pago) + 900
+SiNo
+pago = 50
+total = ((n-8) * pago) + 1200
+FinSi
+FinSi
+FinSi
+Escribir "El pago de la cita es: $",pago
+Escribir "Lo que ha pagado por el tratamiento es: $",total
+FinAlgoritmo

@@ -1,0 +1,16 @@
+algoritmo que suma los multiplos de 9 entre el 1 y el 100
+
+
+inicio
+
+integer contador =1
+integer suma =0
+
+mientras(contador<=100) hacer
+si contador %9 == 0 hacer
+suma = (suma+contador)
+
+contador=contador+1
+
+fin mientras
+fin

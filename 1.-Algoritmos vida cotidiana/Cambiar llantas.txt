@@ -1,0 +1,33 @@
+inicio Cambiar llanta 
+
+1 verificar ruda de respuesto
+  
+ A si,tengo continua a paso dos
+ B no tengo llamar a una grua
+
+2 verificar si hay herramientas
+ A si tengo herramientas continua a paso 3
+ B no tengo herramientas llamar a grua 
+
+3 levantar auto con la gata 
+ A verificar si tiene tornillos si tiene quitar 
+ B si no tiene seguir a paso 4
+
+4 Sacar rueda defectuosa  
+
+5 colocar rueda nueva
+
+6 colocar tornillos 
+
+7 retirar gata 
+
+8 guardar herramientas y partir
+
+entrada: rueda nueva, rueda usada,herramientas 
+salida: rueda usada 
+ 
+
+
+
+
+

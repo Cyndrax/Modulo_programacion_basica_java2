@@ -1,0 +1,41 @@
+Inicio
+
+Int materia_prima
+Int mano_obra
+int gasto_fabricacion
+Int costo_produccion
+Int precio_venta 
+int clave 
+Escribir "Ingresa la clave del artículo"
+leer clave
+si clave >= 1 y clave <= 6 Entonces
+Escribir "Ingresa el costo de la materia prima"
+leer materia_prima
+si clave == 3 o clave == 4 Entonces
+mano_obra = materia_prima * .75
+SiNo
+si clave == 1 o clave == 5 Entonces
+mano_obra = materia_prima * .80
+SiNo
+mano_obra = materia_prima * .85
+FinSi
+FinSi
+si clave == 2 o clave == 5 Entonces
+gasto_fabricacion = materia_prima * .30
+SiNo
+si clave == 3 o clave == 6 Entonces
+gasto_fabricacion = materia_prima * .35
+SiNo
+gasto_fabricacion = materia_prima * .28
+FinSi
+FinSi
+costo_produccion = materia_prima + mano_obra + gasto_fabricacion
+precio_venta = costo_produccion + (costo_produccion * .45)
+Escribir "El gasto de mano de obra para el articulo con clave ",clave," es: $",mano_obra
+Escribir "El gasto de fabricacion para el articulo con clave ",clave," es: $",gasto_fabricacion
+Escribir "El costo de producción para el articulo con clave ",clave," es: $",costo_produccion
+Escribir "El precio de venta para el articulo con clave ",clave," es $",precio_venta
+SiNo
+Escribir "Ingresa una clave correcta"
+FinSi          
+FinAlgoritmo

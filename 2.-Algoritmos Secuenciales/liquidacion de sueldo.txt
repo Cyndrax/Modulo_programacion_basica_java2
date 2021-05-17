@@ -1,0 +1,60 @@
+Entradas: Sistema Remuneraciones, Usuario, Trabajador.
+
+constantes: Valor sueldo mínimo.
+Tope imponible.
+
+
+Sesión:
+Usuario: Clase
+Usuario:
+id: integer,
+Nombre: string,
+Apellido: string,
+Run: string,
+correo electrónico: string,
+clave: string.
+Trabajador:
+id: integer,
+Nombre: string,
+Apellido: string,
+Run: string,
+correo electrónico: string,
+cargo: string,
+area: string,
+afp: integer,
+salud:integer,
+%salud: float
+AFPs:
+id: integer,
+nombre: string,
+porc: float
+Salud:
+id: integer,
+nombre: string
+Liquidacion:
+id: integer,
+idtrabajador: integer,
+días_trabajdos: integer,
+imponible: integer,
+monto_salud: integer,
+monto_afp: integer,
+seguro_cesantía: integer,
+no_imponible: integer,
+líquido: integer.
+
+
+
+Proceso:
+1. Ingresa a sistema de remuneraciones
+2. Buscar persona a liquidar
+3.
+Si existe persona, ingresar a la ficha
+Si no existe persona, agregar sus datos.
+3a. Agregar datos personales, de afp, isapre y/o fonasa, haberes y/o descuentos.
+
+4. Si persona existía, y hay haberes o descuentos ingresar.
+5. Presionar realizar liquidación.
+6. Se genera liquidación.
+7. Se imprime.
+
+Salida: Liquidación

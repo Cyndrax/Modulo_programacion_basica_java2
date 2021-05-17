@@ -1,0 +1,13 @@
+suma de numeros del 1 al 100
+
+inicio
+
+int num
+int sum
+para(num=1,num=<100,n++)
+      sum = num+num
+escribe"la suma es"sum
+finPara
+
+
+

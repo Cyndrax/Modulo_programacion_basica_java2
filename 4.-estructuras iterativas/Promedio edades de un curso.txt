@@ -1,0 +1,46 @@
+int total
+int edad
+int suma 
+
+Escribir "Ingresa el total de alumnos"
+
+Leer total
+x = 1
+suma = 0
+
+Mientras (x <= total) Hacer
+
+Escribir "Ingresa tu edad"
+leer edad
+suma = suma + edad
+ x = x + 1
+
+FinMientras
+
+Escribir "El promedio de edades de todo el grupo es: ",suma / total
+
+FinAlgoritmo
+
+---------------------------------------------------------------------------------------------------------------
+
+Int edad
+Int menor
+Str sn
+Int ce
+Int promedio
+
+Ce=0
+hacer
+escribir “ingrese una edad”
+leer edad
+si (edad<menor) entonces
+menor=edad
+si no
+mayor=edad
+fin si
+suma=suma+edad
+ce++
+escribir “desea ingresar otro número s/n”
+mientras (sn==s)
+promedio = suma/ce
+escribir “el promedio de edad es”, promedio, “ y la mayor edad es “,mayor ,”y la menor es”, menor

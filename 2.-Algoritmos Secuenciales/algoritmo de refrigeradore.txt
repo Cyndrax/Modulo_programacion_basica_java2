@@ -1,0 +1,98 @@
+
+Problemáticas 
+
+1.Contabilizar inventario de un refrigerador
+    
+2.Contabilizar de inventario y colocación de precios en una tienda virtual.
+
+Requerimientos funcionales
+
+1:
+a. Registrar productos que ingresarán al refrigerador.
+
+constante: ?
+Producto:
+    id: integer,
+    nombre: string, 
+    cantidad: float,
+    medida: string,
+    descripcion: string,
+    
+Proceso:
+    Por cada uno de los productos comprados ingresar su información.
+
+b. Determinar que la cantidad de productos existentes se corresponda con la cantidad minima ingresada.
+ 
+constante: Espacio volumetrico. float.
+Producto:
+    id: integer,
+    nombre: string, 
+    cantidad: float,
+    medida: string,
+    descripcion: string,
+
+Canasta:
+    Productos: Clase producto.
+    FechaRegistro: string.
+
+Proceso:
+    Por cada uno de los productos comprados registrar su salida completa del refrigerador.
+    Registrar si cantidad es menor que la canasta básica.
+ 
+ 
+ 
+c. Realizar la compra en el supermercado.
+
+constante: Espacio volumetrico. float.
+Producto:
+    id: integer,
+    nombre: string, 
+    cantidad: float,
+    medida: string,
+    descripcion: string,
+
+Faltantes:
+    Productos: Clase producto.
+    FechaCompra: string.
+
+Proceso:
+    Si el 80% de la canasta básica esta
+    Registrar si cantidad es menor que la canasta básica.
+
+2:
+a. Ingresar productos y su cantidad al sistema.
+
+Proceso: ingreso de productos(id) y cadintad de existencias
+
+Constante: 
+
+variables: 
+    id. interg 
+    nombre. string
+    cantidad. float
+    medida.  string
+    costo variable. interg
+
+b. Calcular el precio de venta.
+Constante
+costo fijo. int,
+Variable  
+costo variable int   
+
+c. Determinar las existencias
+
+Variables:
+    id. interg 
+    nombre. string.
+    cantidad. float.
+    medida.  string.
+    
+
+    
+
+
+
+    
+    
+
+

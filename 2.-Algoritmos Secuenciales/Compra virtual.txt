@@ -1,0 +1,28 @@
+Realizar una compra virtual 
+
+Inicio
+
+Entrada: objeto a comprar, metodo de pago :
+
+ 1 Entrar a pagina para comprar el objeto deceado 
+ 2 buscar el objeto a comprar 
+ 3 una vez encontrado agregar a carrito de compras
+ 4 ingresar usario y contraseña de pagina correspondiente 
+ 5 en carrito de compras verificar si existen cupones o descuento 
+ 6 ingresar metodo de pago
+ 7 ingresar lugar de despacho 
+ 8 comprar
+ 9 verificar baucher de compra o boleta
+ 10 esperar en casa objeto comprado 
+
+
+Salida: objeto Comprado,metodo de compra, lugar de despacho, Comprobante o boleta de compra 
+
+Procesos: 
+
+variables: objeto a comprar, metodo de pago, lugar de despacho, cupones o descuentos, 
+
+Constantes: 
+
+ 
+ 

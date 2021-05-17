@@ -1,0 +1,39 @@
+inicio
+
+int n
+int tarjeta
+int hamburguesa 
+int total 
+Escribir "Cuantas hamburguesas desea comprar"
+leer n  
+para x = 1 hasta n hacer
+Escribir "Seleccione el numero del tipo de hamburguesa: ";
+Escribir "    1.- S sencilla $ 20″
+Escribir "    2.- D doble $25″
+Escribir "    3.- T triples $28″
+leer hamburguesa
+Segun hamburguesa Hacer
+1:
+total = total + 20
+2:
+total = total + 25
+3:
+total = total + 28
+De Otro Modo:
+Escribir "Ese numero no existe en el menu"
+Fin Segun       
+FinPara
+Escribir "Elige el tipo de pago:"
+Escribir "    1.- Efectivo"
+Escribir "    2.- Tarjeta de credito o debito"
+leer tarjeta
+Segun tarjeta Hacer
+1:
+Escribir "El total a pagar es de: ",total," pesos"
+2:
+total = total + (total * .05)
+Escribir "El total a pagar es de: ",total," pesos"
+De Otro Modo:
+Escribir "Elige un numero correcto"
+Fin Segun       
+FinAlgoritmo

@@ -1,0 +1,22 @@
+algoritmo que genera un descuento por compra de traje sobre 25000 del 15% todos los demas trajes descuenta solo un 8%
+
+Inicio
+
+integer vl_traje
+integer precio
+
+escribir("Ingrese el valor de traje")
+leer vl_traje
+
+si vl_traje<=0
+escribir("Debe ingresar un numero mayor a 0")
+sino
+si vl_traje>250000
+precio=vl_traje*0.85
+
+sino precio=vl_traje*0.92
+fin si
+fin si
+
+Escribir ("El costo de su traje es: "precio)
+fin

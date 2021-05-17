@@ -1,0 +1,34 @@
+inicio
+
+#saber cuanto le pagara el banco despues de un mes a razon del 2%
+
+var 
+
+saldo,float
+vtf, float
+inv, float
+
+
+escribir"ingrese el saldo que posee"
+leer == saldo
+escribir"ingrese 
+
+
+Invertir capital con 2% de interés
+Variables
+• float Capital
+• Float Interés
+• Float total
+• Short meses
+
+Escribir: “ingrese capital”
+Leer capital
+Escribir “cuanto capital tendrá en x meses”
+Leer meses
+Mientras meses >0
+Interés=(capitalx2)/100
+Total=capital+interés
+Meses =Meses - 1
+Fin mientras
+Escribir “el capital a”, meses, “es”, total
+

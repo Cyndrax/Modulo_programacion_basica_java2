@@ -1,0 +1,34 @@
+algoritmo que verifica que un numero ingresado sea par o impar y los suma exige un numero finito de sumas
+
+inicio
+
+int num_tope
+int num
+int suma=0
+int suma_impar=0
+int cont_num_par=0
+int cont_num_impar=0
+
+escribe("ingrese cuantos numeros desea ingresar")
+leer num_tope
+
+mientras num_tope>=0
+escribe ("ingrese su numero par o impar para ser sumado")
+leer num
+
+si num%2==0
+suma=suma+num
+cont_num_par=cont_num_par+1
+
+sino
+suma_impar=suma_impar+num
+cont_num_impar=cont_num_impar+1
+
+num_tope=num_tope-1
+
+
+fin mientras
+
+Escribe ("Su suma de numeros pares es: " suma " y la cantidad de numeros pares sumados es de "cont_num_par)
+Escribe ("Su suma de numeros impares es: " suma_impar " y la cantidad de numeros impares sumados es de "cont_num_impar)
+fin

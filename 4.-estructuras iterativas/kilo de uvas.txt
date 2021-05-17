@@ -1,0 +1,32 @@
+
+
+ Inicio
+
+  char tipo
+  int kilos
+  int precio
+  int tamaño
+  Escribir "Ingresa los kilos de uvas"
+  leer kilos
+  Escribir "Ingresa el precio por kilo"
+  leer precio
+  Escribir "Ingresa el tipo de uva: A o B"
+  leer tipo
+  Escribir "Ingresa el tamaño de la uva: 1 o 2"
+  leer tamaño
+  si tipo = "A" Entonces
+  si tamaño == 1 Entonces
+  precio = precio + 20
+  SiNo
+  precio = precio + 30
+  FinSi
+  SiNo
+  si tamaño = 1 Entonces
+  precio = precio – 30
+  SiNo
+  precio = precio – 50
+  FinSi
+  FinSi
+  total = precio * kilos
+  Escribir"La ganancia por ",kilos," kilos de uva es: $",total
+FinAlgoritmo

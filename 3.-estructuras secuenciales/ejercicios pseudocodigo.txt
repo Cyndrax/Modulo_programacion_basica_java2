@@ -1,0 +1,103 @@
+inicio
+
+variables
+
+modelo, string;
+marca ,string;
+
+
+escribe"ingrese modelo";
+leer = modelo;
+escribe"ingrese marca";
+leer = marca;
+
+
+escribe"la marca de su vehiculo es", marca;
+escribe"y el modelo es", modelo;
+
+
+ejercicio 2
+
+numero, int;
+porcentaje, float ;
+numerofinal, float;
+
+
+escribe"ingrese numero";
+leer = numero;
+escribe"ingrese porcentaje";
+leer = porcentaje;
+
+numerofinal = (numero*porcentaje)/100
+
+
+escribe"El ", porcentaje, " de ", numero, " es ", numerofinal; 
+
+ejercicio 3
+
+
+inicio
+
+
+variables:
+sueldobase = float
+cantidadventas = integer
+comision= float
+totalsueldo = float  
+
+
+Escribir “ingrese Sueldobase”
+leer = sueldobase
+escribir : “Ingrese cantidad de ventas “
+leer = cantidadventas
+
+
+
+comision = cantidadventas *10%
+totalsueldo = sueldobase+ comision
+
+Escribir"las comision de los meses es de "comision
+Escribir"y el sueldo total es de"totalsueldo
+
+
+fin
+
+
+ 
+
+
+
+Variables
+Int Sueldo Base
+Int Venta1
+Int Venta2
+Int Venta3
+Int SumaVentas
+Int ComisionVenta
+Int SueldoVentas
+
+Constante
+float comision = 0.1
+
+Escribir ("ingrese sueldo base")
+Leer SueldoBase
+Escribir("Ingrese Venta 1")
+Leer Venta 1
+Escribir("Ingrese Venta 2")
+Leer Venta 2
+Escribir("Ingrese Venta 3")
+Leer Venta 3
+
+//Calcular comision de ventas
+SumaVentas = Venta1 + Venta2 + Venta3
+ComisionVenta = SumaVentas * comision
+SueldoVentas = SueldoBase + ComisionVentas
+
+Escribir("Su comision por las ventas ingresadas es" . ComisionVenta)
+Escribir("Su sueldo quedaria en " . SueldoVentas)
+
+
+
+
+
+

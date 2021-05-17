@@ -1,0 +1,30 @@
+Algoritmo de liquidacion de sueldo 
+
+
+entradas: Nombre, rut, usario, contraseña, mes, año,
+
+salidas: liquidacion de sueldo
+
+variables: nombre, rut, usuario, contraseña, mes , año, liquidacion,  
+
+constantes: 
+
+1 ingresar a pagina del trabajo
+
+2 ingresar usario y contraseña 
+
+3 buscar pestaña para retiro de documentos
+
+4 ingresar a pestaña de liquidacion de sueldo
+
+5 ingresa nombre, rut
+
+6 cuando aparesca la plantilla ingresar sueldo minimo de su pais
+
+7 ingresar tipo de descuento 
+
+5 ingresa mes y año de liquidacion de sueldo deceada deseada
+
+6 click en imprimir o guardar.
+
+

@@ -1,0 +1,12 @@
+Int suma
+Int i
+Escribir “ingrese un numero”
+Leer i
+Suma=0
+Mientras(i>0) entonces
+Suma=suma+i
+I--
+Fin mientras
+Escribir “la suma de los numeros de 1 a”, i es “, suma
+
+

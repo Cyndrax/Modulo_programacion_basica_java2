@@ -1,0 +1,44 @@
+algoritmo que verifica si el numero ingresado es multiplo de 5 y lo agrega a un contador
+
+inicio
+
+int num_tope
+int num
+int contador=0
+
+escribe("ingrese cuantos numeros desea ingresar")
+leer num_tope
+
+mientras num_tope>=0
+Escribe ("Ingresa tu numero")
+leer num
+
+si num%5==0
+
+contador=contador+1
+
+num_tope=num_tope-1
+fin mientras
+
+Escribe ("La cantidad de numeros ingresados multiplos de 5 es: " contador)
+fin
+
+
+Int num
+Int mul
+Int suma
+String op
+
+
+Suma=0
+Hacer
+Escribir “ingresar un numero”
+Leer num
+M5=num%5
+Si (mul==0)
+Suma=suma+1
+Fin si
+Escribir “Desea ingresar otro número s/n”
+Leer op
+mientras (op==s)
+escribir “la suma de los múltiplo de 5 ingresados es”,suma

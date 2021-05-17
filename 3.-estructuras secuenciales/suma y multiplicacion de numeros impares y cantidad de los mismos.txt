@@ -1,0 +1,111 @@
+Int num
+Int par
+Int sumai
+Int sumap
+Int coni
+Int conp
+Str opera
+Int dif
+
+
+Suma=0
+Coni=0
+Conp=0
+Hacer
+Escribir “ingresar un numero”
+Leer num
+par=num%2
+Si (par==0)
+Sumap=sumap+num
+Conp=conp+1
+Si no
+Sumai=sumai*num
+Coni=coni+1
+Fin si
+Escribir “Desea ingresar otro número s/n”
+Leer opera
+mientras (opera==s)
+escribir “la suma de los”, conp, “números pares ingresados es”,sumap, “y la multiplicación de los”, coni,”números impares es”,sumai,
+dif =conp-coni
+si (dif>0) entonces
+escribir “hay más números pares”
+fin si
+si (dif<0) entonces
+escribir “hay más números impares”
+fin si
+si (dif==0) entonces
+escribir “hay la misma cantidad de pares e impares”
+fin si
+
+--------------------------------------------------------------------------------------------------------------------------
+
+
+int cantidad
+int contadorNP
+int contadorNI
+int num
+int sumaNP
+int multNI
+
+escribir "Ingrese la cantidad de numeros totales"
+leer cantidad
+
+para (i=0; i< cantidad; i++)hacer
+escribir "Ingrese un numero"
+leer num
+si(num%2==0)
+sumaNP = sumaNP + num
+contadorNP++
+sino
+multNI = multNI * num
+contadorNI++
+finSi
+finPara
+
+escribir "La suma de los numeros pares es", sumaNP, "Y la cantidad es ", contadorNP;
+escribir "La suma de los numeros impares es", multNI, "Y la cantidad es ", contadorNI;
+
+si(contadorNP==contadorNI)
+"escribir "la cantidad de numeros es igual"
+sino si(contadorNP>contadorNI)
+escribir "La caintidad de numeros pares es mayor"
+sino
+escribir "La cantidad de numeros impares es mayor"
+
+------------------------------------------------------------------------------------------------------------------------
+
+
+Funcion: sumarParesMultiplicarImpares
+
+Variables: cantNumeros, numero, contadorPar=0, contadorImpar=0, SumaPar=0, Multi = 1 (int)
+
+Escribir: "Ingrese cantidadNumeros ".
+Leer cantNumeros
+
+
+Para(i=1; i<=cantNumeros; i++) hacer
+
+Escribir: "Ingrese numero ".
+Leer numero
+
+Si numero mod 2 == 0 entonces
+SumaPar = SumaPar + numero
+contadorPar++
+Sino
+Multi = Multi * numero
+contadorImpar++
+FinSi
+
+finPara
+
+Escribir: "La sumaPar es ", SumaPar
+Escribir: "La Multiplicacion es ", Multi
+
+Segun contadorPar
+(>contadorImpar) Escribir: "cantidad de pares es mayor que impares: ", contadorPar, " ", contadorImpar
+(=contadorImpar) Escribir: "cantidad de pares es igual que impares: ", contadorPar, " ", contadorImpar
+(<contadorImpar) Escribir: "cantidad de pares es menor que impares: ", contadorPar, " ", contadorImpar
+Fin Segun
+
+
+Fin Funcion

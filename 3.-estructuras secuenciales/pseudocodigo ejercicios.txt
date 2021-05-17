@@ -1,0 +1,57 @@
+Inicio
+ 
+var
+a,int
+b,int
+c,int
+
+#suma de numeros 
+escribir"ingrese primer numero a sumar";
+leer == a;
+escribir"ingrese segundo numero";
+leer == b;
+a+b == c;
+escribir "el resultado de su suma es"c;
+
+
+end
+
+
+inicio 
+
+var 
+
+not1,float
+not2,float
+not3,float
+notf,float
+notfs,float
+
+
+
+leer"ingrese la notas numero uno "
+esribir == not1
+leer"ingrese la segunda nota"
+escribir == not2
+leer"escribir tercera nota"
+escribir == not3
+
+(not1+not2+not3) == notfs
+notfs/3 == notf
+
+escribe"tu nota final es notf"
+escribe notf
+
+end
+
+inicio
+
+
+Escribe: “ingrese número”
+Leer numero
+Cuadrado = numero*numero
+Escribir: “el cuadrado de”, numero, “es”,cuadrado
+
+end
+
+

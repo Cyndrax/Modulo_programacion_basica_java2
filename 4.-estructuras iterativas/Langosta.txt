@@ -1,0 +1,19 @@
+Inicio
+
+Escribir 'cantidad de comesales'
+Leer n
+Si n<200 Entonces
+sin_descuento <- (n*9500)
+Escribir 'valor total es: ',sin_descuento
+SiNo
+Si n>=200 Y n<=300 Entonces
+descuento_mayor <- (n*8500)
+Escribir 'el valor total es: ',descuento_mayor
+SiNo
+Si n>300 Entonces
+descuento_menor <- (n*7500)
+Escribir 'el valor total ',descuento_menor
+FinSi
+FinSi
+FinSi
+FinAlgoritmo

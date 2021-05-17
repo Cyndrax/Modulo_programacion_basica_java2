@@ -1,0 +1,72 @@
+
+
+Calcular N numeros (cantidad ingresada por usuario) que sean numeros primos.
+
+Variables:
+- Int cantidad
+- Int numero = 0
+- Int Numaux
+- Int calculo
+- Int i
+- int aux
+
+Proceso:
+Escribir ("Cuantos numeros desea calcular?")
+Leer cantidad
+
+Para (i = 1; i <= cantidad; i++){
+Escribir ("Ingrese " . i . "Numero")
+Leer (numero)
+numaux = 2
+Si (numero > 1) {
+Mientras (Numaux < numero){
+calculo = numero % numaux
+Si (calculo == 0){
+Numaux = numero
+aux = 1
+}
+Fin Si
+Si (aux == 1 && numero > 2){
+Escribir ("El numero " . numero . "no es primo!")
+}
+Sino {
+Escribir ("El numero " . numero . "es primo")
+}
+Fin Si
+aux = 0
+Numaux++
+}Fin Mientras
+}
+Sino {
+Escribir ("El numero 1 no es primo, favor ingresar otro numero")
+}
+}Fin Para
+
+
+
+
+
+
+Int num
+Int primo
+Int mult
+Str op
+
+Mult=1
+Hacer
+Escribir “ingresar número primo”
+Leer num
+Si num!=1 entonces
+Primo=num%(num-1)
+Si no
+Primo=1
+Fin si
+Si (primo==0) entonces
+Mult=mult*num
+Si no
+Escribir “el numero ingresado no es primo Ingrese un numero primo”
+Fin si
+Escribir “Desea ingresar otro número s/n”
+Leer op
+mientras (op==s)
+escribir “la multiplicación de los números primos ingresados es”,mult

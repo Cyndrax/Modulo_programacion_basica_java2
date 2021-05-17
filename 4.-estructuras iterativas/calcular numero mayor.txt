@@ -1,0 +1,52 @@
+
+int x, 
+int n, 
+int total, 
+int numero_mayor 
+
+Inicio
+
+Escribir "Escribe el total de números a calcular"
+
+leer total
+
+x = 1
+
+Mientras( x <= total )  Hacer
+
+Escribir "Escribe un número"
+
+leer n
+
+si (x == 1) Entonces
+
+   numero_mayor = n
+
+SiNo
+
+si (n > numero_mayor) Entonces
+
+numero_mayor = n
+
+  FinSi
+
+FinSi
+
+ x = x + 1
+
+FinMientras
+
+Escribir "El número mayor es: ",numero_mayor
+
+FinAlgoritmo
+
+--------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+

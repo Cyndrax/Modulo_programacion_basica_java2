@@ -1,0 +1,17 @@
+cambiar pañal inicio
+
+-recostar bebe
+
+-sacar pañal sucio
+
+-limpiar al bebe 
+
+-secar al bebe y añadir talco si va a usar 
+
+-colocar pañal nuevo 
+
+-bebe feliz 
+ 
+
+entrada: bebe, pañal sucio, talco, pañal nuevo.
+Salida: bebe feliz, pañal sucio
