@@ -1,0 +1,104 @@
+package ejerc2clase2;
+import java.util.Scanner;
+/**
+ *
+ * @author LitoPc2
+ */
+public class Ejerc2Clase2 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        int numero;            
+     
+        Scanner leer = new Scanner(System.in);
+        System.out.println("Ingrese un numero");
+        numero = leer.nextInt();
+        if( numero %2==0){
+            System.out.println("Su numero es par");
+        }else{
+            System.out.println("su numero es impar");
+        }
+         
+        
+    }
+    
+}
+----------------------------------------------------------------------------------------------------------------
+
+package ejempclase2;
+import java.util.Scanner;
+/**
+ *
+ * @author LitoPc2
+ */
+public class EjempClase2 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+         Scanner leer = new Scanner(System.in);
+         int numero = 0;
+         int numero1 = 0;
+         int numero2 = 0 ;
+         System.out.println("Ingrese 1 si decea multilicae o 2 si decea dividir");
+         numero = leer.nextInt ();
+         if(numero==1){
+             System.out.println("Ingrese primer numero a multiplicar");
+         numero1 = leer.nextInt ();
+             System.out.println("Ingrese segundo numero a multiplicar");
+         numero2 = leer.nextInt ();
+            
+         System.out.println("la multiplicacion de sus numero es "+numero1*numero2);
+ }else{
+        if(numero == 2){
+            System.out.println("Ingrese primer numero a Dividir");
+         numero1 = leer.nextInt ();
+             System.out.println("Ingrese segundo numero a Dividir");
+         numero2 = leer.nextInt ();
+         System.out.println("la division de sus numeros es "+numero1/numero2);
+} 
+
+         }
+ 
+    }
+    
+}
+-----------------------------------------------------------------------------------------------------
+
+package ejerc3clase2;
+import java.util.Scanner;
+/**
+ *
+ * @author LitoPc2
+ */
+public class Ejerc3Clase2 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        int eleccion;
+        Scanner leer = new Scanner(System.in);
+        System.out.println("seleccione menu 1 para Carne y 2 para Vegano ");
+        eleccion = leer.nextInt ();
+        if(eleccion ==1){
+        System.out.println("1 hamburguesas ");   
+        System.out.println("2 Carnes a la parrilla ");
+        System.out.println("3 embutidos ");
+}else{
+        
+        System.out.println("1 hamburguesas ");   
+        System.out.println("2 Jardin de verduras ");
+        System.out.println("3 embutidos veganos ");       
+        }
+          
+        
+    }
+    
+}

@@ -1,0 +1,107 @@
+package ejercicioswitch3cl;
+
+/**
+ *
+ * @author LitoPc2
+ */
+public class Ejercicioswitch3cl {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+                int dia = 5;
+        String diaS;
+         
+        // instrucción switch con tipo de datos int
+        switch (dia) 
+        {
+            case 1:  diaS = "Lunes";
+                     break;
+            case 2:  diaS = "Martes";
+                     break;
+            case 3:  diaS = "Miercoles";
+                     break;
+            case 4:  diaS = "Jueves";
+                     break;
+            case 5:  diaS = "Viernes";
+                     break;
+            case 6:  diaS = "Sabado";
+                     break;
+            case 7:  diaS = "Domingo";
+                     break;
+            default: diaS = "Dia inválido";
+                     break;
+        }
+        System.out.println(diaS);
+        
+    }
+    
+}
+-------------------------------------------------------------------------------------------------
+
+package ejercic2switch3clas;
+import java.util.Scanner;
+/**
+ *
+ * @author LitoPc2
+ */
+public class Ejercic2switch3clas {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+              Scanner leer=new Scanner (System.in);
+       int Mes;
+       System.out.println ("Ingrese el numero del mes del año");
+       Mes = leer.nextInt();
+       System.out.println("el mes numero "+Mes+" es ");
+     
+       switch (Mes)
+     
+       {
+           case 1: System.out.println("Enero");
+           break;
+         
+           case 2: System.out.println("Febrero");
+           break;
+         
+           case 3: System.out.println("Marzo");
+           break;
+         
+           case 4: System.out.println("Abril");
+           break;
+         
+           case 5: System.out.println("Mayo");
+           break;
+         
+           case 6: System.out.println("Junio");
+           break;
+         
+           case 7: System.out.println("Julio");
+           break;
+         
+           case 8: System.out.println("Agosto");
+           break;
+         
+           case 9: System.out.println("Septiembre");
+           break;
+         
+           case 10: System.out.println("Octubre");
+           break;
+         
+           case 11: System.out.println("Noviembre");
+           break;
+         
+           case 12: System.out.println("Diciembre");
+           break;
+
+        
+    }
+    }
+}
+    
+

@@ -1,0 +1,92 @@
+package ejercicioclase3;
+import java.util.Scanner;
+/**
+ *
+ * @author LitoPc2
+ */
+public class EjercicioClase3 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        Scanner leer = new Scanner(System.in);
+        int Numero1;
+        int Numero2;
+        int Numero3;
+        System.out.println("Ingrese Primer numero");
+        Numero1 = leer.nextInt();
+        System.out.println("Ingrese Segundo numero");
+        Numero2 = leer.nextInt();
+        System.out.println("Ingrese Tercer numero");
+        Numero3 = leer.nextInt();
+        if(Numero1>Numero2 && Numero1>Numero3){
+         System.out.println("Numero mayor es "+Numero1);
+        }else{
+            if(Numero2>Numero1 && Numero2>Numero3){
+             System.out.println("Numero mayor es "+Numero2);
+            }else{
+                System.out.println("Numero mayor es "+Numero3);
+
+            }
+
+        }
+        
+    }
+    
+}
+------------------------------------------------------------------------------------------------------------------------
+
+package chsmefone;
+import java.util.Scanner;
+
+/**
+ *
+ * @author LitoPc2
+ */
+public class Chsmefone {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        Scanner leer = new Scanner(System.in);
+        double tiempo;
+        int dia =0;
+        int turno=0;
+        double pago=0;
+        double impuesto;
+        double total=0;
+        System.out.println("Ingrese Duracion de la llamada ");
+        tiempo = leer.nextDouble();
+        System.out.println("Ingrese 1 si es un dia domingo ingrese 2 para otro");
+        dia = leer.nextInt();
+        System.out.println("Ingrese Turno 1 para matutino 2 para vespertino");
+        turno = leer.nextInt();
+        if(tiempo<5){
+        pago = tiempo*10;
+        }else
+            if(tiempo<8){
+                pago = (tiempo-5)*0.8+5;
+            }else
+                if(tiempo<=10){
+            pago = (tiempo-8)*0.7+7.4;
+                }else
+                    pago = (tiempo-10)*0.5+8.8;
+        if(dia==1){
+           impuesto = pago * 0.05; 
+        }else
+            if(turno==1){
+                impuesto=pago * 0.15; 
+            }else
+        impuesto=pago*0.10; 
+        total=pago+impuesto;
+        System.out.println("el pago es "+pago);
+        System.out.println("y el impuesto es de "+String.format("%.2f",impuesto));
+        System.out.println("el total es "+String.format("%.2f",total));
+    }
+     
+}
+

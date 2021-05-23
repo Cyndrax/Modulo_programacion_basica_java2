@@ -1,0 +1,162 @@
+package tareadia19clase.pkg3;
+import java.util.Scanner;
+/**package tareadia19clase.pkg3;
+
+ *
+ * @author LitoPc2
+ */
+public class TareaDia19clase3 {
+
+    /**
+      @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        
+        Scanner leer = new Scanner(System.in);
+
+ int n; // Cuenta
+ int x; // *Múltiplo
+ int i; // Contador
+
+System.out.print("¿De qué número quieres los múltiplos?: ");
+ x = leer.nextInt();
+
+System.out.print("¿Hasta qué número quieres la lista?: ");
+ n = leer.nextInt();
+
+for (i=1; i <=n; i++) {
+
+if (i % x == 0)
+ System.out.println(i);
+
+   }
+
+    
+        
+    }
+}
+ -------------------------------------------------------------------------------------------------------------------------
+package ejercclase4;
+import java.util.Scanner;
+/**
+ *
+ * @author LitoPc2
+ */
+public class EjercClase4 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+         Scanner leer =  new Scanner(System.in);
+        int notas;
+        int suma = 0;
+        int prom = 0;         
+
+ System.out.print("ingrese cantidad de notas:");
+        notas = leer.nextInt();
+
+        for(int i=1; i<= notas; i++){
+            System.out.println("ingrese nota"+" "+i+" "+"de"+" "+notas+":");
+            int nota = leer.nextInt();  
+            suma = suma + nota;
+        }
+            prom= suma /notas;
+            System.out.println("promedio de las notas:"+prom );
+    }   
+}
+--------------------------------------------------------------------------------------------------------------
+package ejerciciosumamulticlas4;
+import java.util.Scanner;
+
+/**
+ *
+ * @author LitoPc2
+ */
+public class EjercicioSumamulticlas4 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        Scanner leer =  new Scanner(System.in);
+          int n1,n2,c=0,p=0,im=0,suma=0,mult=0;
+
+System.out.print("Introduce el numero 1:");
+
+ n1=leer.nextInt();
+
+  System.out.print("“Introduce el numero 2:");
+
+   n2=leer.nextInt();
+
+   for(int i=n1;i<=n2;i++)
+
+                        {
+
+    System.out.println("Numero:"+i);
+
+     c++;
+
+ if((i%2)==0)
+ {
+ p++;
+ suma=suma+p;
+
+  }
+ else
+ {
+ im=im+i;
+ mult=im*i;
+
+ }
+
+ }
+
+System.out.println("Hay: "+c+" numeros");
+
+ System.out.println("De los cuales : "+p+" son pares");
+System.out.println("De los cuales : "+im+" son impares");
+System.out.println("La suma de pares : "+suma);
+ System.out.println("La Multiplicacion  de los impares son: "+mult);
+    }
+    
+}
+-----------------------------------------------------------------------------------------------------------------------
+package ejercicionumeroperfecto;
+import java.util.Scanner;
+/**
+ *
+ * @author LitoPc2
+ */
+public class EjercicioNumeroPerfecto {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        long i; 
+        long suma = 0;
+        long n;
+        Scanner leer = new Scanner(System.in);
+        System.out.println("Introduce un número: ");
+        n = leer.nextLong();
+        
+        for (i = 1; i < n; i++) {                            
+            if (n % i == 0) {
+                suma = suma + i;   
+            }
+        }
+        if (suma == n) {                         
+            System.out.println("Perfecto");
+        } else {
+            System.out.println("No es perfecto");
+
+        }
+    }
+}
+    
+    
