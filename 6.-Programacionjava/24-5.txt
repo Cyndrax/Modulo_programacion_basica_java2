@@ -1,0 +1,128 @@
+package numero_de_la_suerte;
+import java.util.Scanner;
+
+/**
+ *
+ * @author LitoPc2
+ */
+public class Numero_de_la_suerte {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        Scanner leer = new Scanner(System.in);
+        int dia;
+        int mes;
+        int año; 
+        int suerte;
+        int suma;
+        int numero1; 
+        int numero2;
+        int numero3;
+        int numero4;                                          
+        System.out.println("Ingrese fecha de nacimiento");
+        System.out.print("día: ");
+        dia = leer.nextInt();
+        System.out.print("mes: ");
+        mes = leer.nextInt();
+        System.out.print("año: ");
+        año = leer.nextInt();
+        
+        suma = dia + mes + año;
+        numero1 = suma/1000;      
+        numero2 = suma/100%10;    
+        numero3 = suma/10%10;     
+        numero4 = suma%10;        
+        suerte = numero1 + numero2 + numero3 + numero4;
+        System.out.println("Su número de la suerte es: "+suerte);   
+    }
+    
+}
+-------------------------------------------------------------------------------------------------------------------
+
+
+package ejerciciohoravalida;
+import java.util.Scanner;
+/**
+ *
+ * @author LitoPc2
+ */
+public class EjercicioHoraValida {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        int H;
+        int M;
+        int S;
+        Scanner leer = new Scanner(System.in);
+        System.out.print("Introduzca hora: ");
+        H =  leer.nextInt();
+        System.out.print("Introduzca minutos: ");
+        M =  leer.nextInt();
+        System.out.print("Introduzca segundos: ");
+        S =  leer.nextInt();
+        if(H>=0 && H<24 && M>=0 && M<60 && S>=0 && S<60)                                                          
+           System.out.println("Hora correcta");
+        else
+            System.out.println("Hora incorrecta");
+    }
+    
+}
+-----------------------------------------------------------------------------------------------------------------------
+
+package ejerciciocal;
+import java.util.Scanner;
+/**
+ *
+ * @author LitoPc2
+ */
+public class EjercicioCal {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        Scanner leer = new Scanner(System.in);
+        int op ;
+        int num1;
+        int num2;
+        int result =0;
+        int n;
+        do{
+       System.out.println("Introduzca ejercicio que decea realizar ");
+       System.out.println("1.suma ");
+       System.out.println("2.resta ");
+       System.out.println("3.multiplicacion ");
+       System.out.println("4.Division ");
+       op =  leer.nextInt();
+       System.out.println("Introduzca el primer numero para la operacion ");
+       num1 =  leer.nextInt();
+       System.out.println("Introduzca el segundo numero para la operacion ");
+       num2 =  leer.nextInt();
+        switch (op) 
+        {
+            case 1:  result = num1+num2 ;
+            System.out.println("el resultado de su suma es "+result);
+                     break;
+            case 2:  result = num1-num2;
+            System.out.println("el resultado de su resta es "+result);
+                     break;
+            case 3:  result = num1*num2;
+            System.out.println("el resultado de su multiplicacion es "+result);
+                     break;
+            case 4:  result = num1/num2;
+            System.out.println("el resultado de su division es "+result);
+                     break;
+        }
+        System.out.println("Desea Realizar otra Operacion 1.- si, 2.- no ");
+        n = leer.nextInt();
+}while(n==1);
+    }
+    
+}
