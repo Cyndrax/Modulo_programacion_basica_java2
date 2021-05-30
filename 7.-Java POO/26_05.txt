@@ -1,0 +1,97 @@
+Creacion de clases atributos y metodos java 
+
+
+
+package ejerclass;
+import java.util.Scanner;
+/**
+ *
+ * @author LitoPc2
+ */
+public class Suma {
+    int suma; 
+    int numero1;
+    int numero2;
+    
+
+public void  Ingreso(){
+Scanner leer = new Scanner(System.in);
+System.out.println("Ingrese numero1 ");
+numero1 = leer.nextInt();
+ System.out.println("Ingrese numero 2");
+ numero2 = leer.nextInt();
+
+}
+public void Suma(){
+suma = numero1+numero2;
+}
+public void Muestra(){
+System.out.println("el resultado de su suma es "+suma);
+
+}
+  
+}
+---------------------------------------------------------------------------------------------------------------------
+package ejerclass;
+import java.util.Scanner;
+
+/**
+ *
+ * @author LitoPc2
+ */
+public class Resta {
+    int resta; 
+    int numero1;
+    int numero2;
+    
+
+public void  Ingreso(){
+Scanner leer = new Scanner(System.in);
+System.out.println("Ingrese numero1 ");
+numero1 = leer.nextInt();
+ System.out.println("Ingrese numero 2");
+ numero2 = leer.nextInt();
+
+}
+public void Resta(){
+resta = numero1-numero2;
+}
+public void Muestra(){
+System.out.println("el resultado de su Resta     es "+resta);
+
+}
+  
+}
+-----------------------------------------------------------------------------------------------------------------------
+package ejerclass;
+import java.util.Scanner;
+
+/**
+ *
+ * @author LitoPc2
+ */
+public class Multiplicacion {
+
+
+    int multi; 
+    int numero1;
+    int numero2;
+    
+
+public void  Ingreso(){
+Scanner leer = new Scanner(System.in);
+System.out.println("Ingrese numero1 ");
+numero1 = leer.nextInt();
+ System.out.println("Ingrese numero 2");
+ numero2 = leer.nextInt();
+
+}
+public void Multiplicacion(){
+multi = numero1-numero2;
+}
+public void Muestra(){
+System.out.println("el resultado de su multiplicacion es "+multi);
+
+}
+  
+}

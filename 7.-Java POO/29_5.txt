@@ -1,0 +1,200 @@
+clases +metodos+objetos para mostrar e ingresar+switch y validador + correccion de errores + agregada funcion de dividir
+
+
+
+
+package ejerclass;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author LitoPc2
+ */
+public class Division {
+    int divi; 
+    int numero1;
+    int numero2;
+    
+
+public void  Ingreso(){
+Scanner leer = new Scanner(System.in);
+System.out.println("Ingrese numero1 ");
+numero1 = leer.nextInt();
+ System.out.println("Ingrese numero 2");
+ numero2 = leer.nextInt();
+
+}
+public void Division(){
+divi = numero1/numero2;
+}
+public void Muestra(){
+System.out.println("el resultado de su division es "+divi);
+
+}
+    
+}
+
+
+
+
+
+-------------------------------------------------------------------------------------------------------------------------
+package ejerclass;
+import java.util.Scanner;
+
+/**
+ *
+ * @author LitoPc2
+ */
+public class Multiplicacion {
+
+
+    int multi; 
+    int numero1;
+    int numero2;
+    
+
+public void  Ingreso(){
+Scanner leer = new Scanner(System.in);
+System.out.println("Ingrese numero1 ");
+numero1 = leer.nextInt();
+ System.out.println("Ingrese numero 2");
+ numero2 = leer.nextInt();
+
+}
+public void Multiplicacion(){
+multi = numero1-numero2;
+}
+public void Muestra(){
+System.out.println("el resultado de su multiplicacion es "+multi);
+
+}
+  
+}
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+package ejerclass;
+import java.util.Scanner;
+/**
+ *
+ * @author LitoPc2
+ */
+public class Suma {
+    int suma; 
+    int numero1;
+    int numero2;
+    
+
+public void  Ingreso(){
+Scanner leer = new Scanner(System.in);
+System.out.println("Ingrese numero1 ");
+numero1 = leer.nextInt();
+ System.out.println("Ingrese numero 2");
+ numero2 = leer.nextInt();
+
+}
+public void Suma(){
+suma = numero1+numero2;
+}
+public void Muestra(){
+System.out.println("el resultado de su suma es "+suma);
+
+}
+  
+}
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+package ejerclass;
+import java.util.Scanner;
+
+/**
+ *
+ * @author LitoPc2
+ */
+public class Resta {
+    int resta; 
+    int numero1;
+    int numero2;
+    
+
+public void  Ingreso(){
+Scanner leer = new Scanner(System.in);
+System.out.println("Ingrese numero1 ");
+numero1 = leer.nextInt();
+ System.out.println("Ingrese numero 2");
+ numero2 = leer.nextInt();
+
+}
+public void Resta(){
+resta = numero1-numero2;
+}
+public void Muestra(){
+System.out.println("el resultado de su Resta     es "+resta);
+
+}
+  
+}
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+package ejerclass;
+import java.util.Scanner;
+
+/**
+ *
+ * @author LitoPc2
+ */
+public class EjeRClass {
+    
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        int op;
+        int n;
+        Suma sm = new Suma();
+        Resta rm = new Resta();
+        Multiplicacion mt = new Multiplicacion();
+        Division dv = new Division();
+        Scanner leer = new Scanner(System.in);
+        do{
+        System.out.println("Que operacion decea realizar");
+        System.out.println("1- suma");
+        System.out.println("2- resta");
+        System.out.println("3- Multiplicacion");
+        op =  leer.nextInt();
+        
+        switch (op) 
+        {
+            case 1: 
+            sm.Ingreso();
+            sm.Suma();
+            sm.Muestra();
+            
+            
+                     break;
+            case 2:
+                rm.Ingreso();
+                rm.Resta();
+                rm.Muestra();
+            
+                     break;
+                     
+            case 3:
+            mt.Ingreso();
+            mt.Multiplicacion();
+            mt.Muestra();
+                     break;
+            case 4:
+                dv.Ingreso();
+                dv.Division();
+                dv.Muestra();
+               
+        }
+        System.out.println("Desea Realizar otra Operacion 1.- si, 2.- no ");
+        n = leer.nextInt();
+}while(n==1);
+       System.out.println("que tenga un buen dia
+"); 
+    }
+    
+}
