@@ -1,0 +1,134 @@
+clases +metodos+objetos para mostrar e ingresar+switch y validador + correccion de errores + agregada funcion de dividir
+se junta todo en una clase y se agrega variables privadas y aviso de metodo+getter y setter
+
+
+
+
+
+package ejerclass;
+import java.util.Scanner;
+
+/**
+ *
+ * @author LitoPc2
+ */
+public class EjeRClass {
+
+    public static void main(String[] args) {
+        // TODO code application logic here
+        int opcion;
+        int n;
+      
+        Operacion Op = new Operacion();
+        Scanner leer = new Scanner(System.in);
+        do{
+        System.out.println("Que operacion decea realizar");
+        System.out.println("1- Suma");
+        System.out.println("2- Resta");
+        System.out.println("3- Multiplicacion");
+        System.out.println("4- Division");
+        opcion =  leer.nextInt();
+        System.out.println("Ingrese Primer numero");
+        int numero1 =  leer.nextInt();
+        System.out.println("Ingrese segundo numero");
+        int numero2 = leer.nextInt();
+      
+         
+        switch (opcion) 
+        {
+            case 1:
+        
+                System.out.println("Usted a elegido suma");
+                System.out.println("El resultado de sus suma es "+Op.getSuma());
+                     break;
+            case 2:
+                System.out.println("Usted a elegido resta");
+                System.out.println("El resultado de su resta es "+Op.Resta(numero1,numero2));
+            
+                     break;
+                     
+            case 3:
+                 System.out.println("Usted a elegido Multiplicacion");    
+                 System.out.println("El resultado de su Multiplicacion es "+Op.Multiplicacion(numero1,numero2));
+                   
+                     break;
+            case 4:
+                System.out.println("Usted a elegido Division");    
+                System.out.println("El resultado de su Division es "+Op.Division(numero1,numero2));
+
+        }
+        System.out.println("Desea Realizar otra Operacion 1.- si, 2.- no ");
+        n = leer.nextInt();
+}while(n==1);
+        
+        System.out.println("que tenga un buen dia");
+    }
+    
+}
+
+-------------------------------------------------------------------------------------------------------------------------
+
+
+package ejerclass;
+/**
+ *
+ * @author LitoPc2
+ */
+public class Operacion {
+    private int resta;
+    private int multi;
+    private int divi;
+    private int suma;
+    //Get y sett
+    public int getSuma() {
+        return suma;
+    }
+    public void setSuma(int suma) {
+         suma = this.suma;
+    }
+    public int getResta() {
+        return resta;
+    }
+    public void setResta(int resta) {
+        this.resta = resta;
+    }
+
+    public int getMulti() {
+        return multi;
+    }
+
+    public void setMulti(int multi) {
+        this.multi = multi;
+    }
+
+    public int getDivi() {
+        return divi;
+    }
+
+    public void setDivi(int divi) {
+        this.divi = divi;
+    }
+    //suma
+ public int Suma(int numero1,int numero2){
+     this.suma = numero1+numero2;
+     return suma;
+ }
+    //Resta
+ public int Resta(int numero1,int numero2){
+     this.resta = numero1-numero2;
+     return resta;
+ 
+ }
+   // Multiplicacion
+ public int Multiplicacion(int numero1,int numero2){
+    this.multi = numero1*numero2;
+    return multi;
+ }
+  //Division
+ public int Division(int numero1,int numero2){
+   this.divi = numero1/numero2; 
+   return divi;
+    }
+
+}
+
